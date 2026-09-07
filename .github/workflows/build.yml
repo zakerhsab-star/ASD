@@ -43,6 +43,4 @@ jobs:
         with:
           name: Scrcpy-Agent-APK
           path: bin/*.apk
-        with:
-          name: Scrcpy-Agent-APK
-          path: bin/*.apk
+          
