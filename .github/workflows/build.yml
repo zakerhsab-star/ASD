@@ -32,8 +32,17 @@ jobs:
       - name: Install Buildozer and Cython
         run: |
           pip install --upgrade pip setuptools wheel
-          pip install "Cython<3.0" buildozer
+          pip install Cython==0.29.36 buildozer
 
+      - name: Build with Buildozer
+        run: |
+          buildozer -v android debug
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Scrcpy-Agent-APK
+          path: bin/*.apk
       - name: Build with Buildozer
         run: |
           buildozer -v android debug
