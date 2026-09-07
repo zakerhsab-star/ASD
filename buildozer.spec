@@ -3,7 +3,7 @@ title = Scrcpy Agent
 package.name = scrcpyagent
 package.domain = org.scrcpy
 source.dir = .
-source.include_exts = py,png,jpg,kv,atlas,json
+source.include_exts = py,png,jpg,kv,atlas
 version = 1.0
 requirements = python3,kivy==2.2.1
 
